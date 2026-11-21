@@ -1,0 +1,9 @@
+venv/
+.python38/
+logs/*
+!logs/.gitkeep
+runtime/*
+!runtime/.gitkeep
+__pycache__/
+*.py[cod]
+.pytest_cache/

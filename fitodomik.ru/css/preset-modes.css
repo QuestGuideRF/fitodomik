@@ -1,0 +1,606 @@
+.preset-modes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    align-items: start;
+    gap: 12px;
+    margin-top: 0;
+    padding: 0;
+}
+.preset-create-actions {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+}
+.find-preset-button {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border: 2px solid var(--primary-color, #2f8f46);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--primary-color, #2f8f46);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+.find-preset-button:hover,
+.find-preset-button:focus-visible {
+    background: rgba(47, 143, 70, 0.1);
+    color: var(--primary-color, #2f8f46);
+}
+.find-preset-button__icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    flex: 0 0 18px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+}
+.find-preset-button__icon::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    bottom: -3px;
+    width: 7px;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    transform-origin: left center;
+}
+.preset-mode,
+.import-code-container {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.preset-mode h3,
+.import-code-container h4 {
+    margin: 0 0 14px;
+    color: var(--primary-color);
+}
+.preset-param {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 8px 0;
+}
+.param-icon {
+    flex: 0 0 24px;
+}
+.param-label {
+    font-weight: 700;
+}
+.param-value {
+    min-width: 0;
+    color: var(--secondary-text);
+    overflow-wrap: anywhere;
+}
+.preset-actions,
+.form-buttons-container,
+.share-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+.activate-button,
+.add-preset-button,
+.btn-save,
+.import-btn,
+.copy-btn,
+.btn-primary,
+.btn-info,
+.btn-secondary,
+.btn-cancel,
+.edit-button,
+.share-button,
+.delete-button {
+    min-height: 42px;
+    padding: 10px 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.activate-button,
+.add-preset-button,
+.btn-save,
+.import-btn,
+.copy-btn,
+.btn-primary {
+    background: var(--accent-surface);
+    color: #fff;
+}
+.activate-button {
+    flex: 1 1 150px;
+}
+.share-button {
+    background: var(--button-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+.edit-button {
+    background: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.edit-button:hover {
+    background: rgba(47, 143, 70, 0.1);
+}
+.delete-button {
+    background: transparent;
+    border-color: #b42318;
+    color: #b42318;
+}
+.delete-button:hover {
+    background: #b42318;
+    color: #fff;
+}
+.btn-info {
+    background: var(--secondary-color);
+    color: #fff;
+}
+.btn-secondary,
+.btn-cancel {
+    background: var(--button-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+.activate-button:hover,
+.add-preset-button:hover,
+.btn-save:hover,
+.import-btn:hover,
+.copy-btn:hover,
+.btn-primary:hover {
+    background: var(--accent-surface-hover);
+    transform: translateY(-1px);
+}
+.add-preset-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    padding: 10px 16px;
+    border-style: dashed;
+}
+.import-code-container .input-group,
+.share-result-section .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.preset-header {
+    width: 100%;
+}
+#presetModesHeader {
+    box-sizing: border-box;
+    width: 100%;
+}
+.import-code-container {
+    width: 100%;
+    padding: 12px 14px;
+    box-shadow: none;
+}
+.import-code-container h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.import-code-container .input-group {
+    flex-wrap: nowrap;
+    margin: 0;
+}
+.import-code-container input,
+.share-input,
+.compact-form input,
+.compact-form select {
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+.import-code-container input {
+    flex: 1 1 320px;
+    width: 100%;
+    max-width: none;
+}
+.import-code-container .import-btn {
+    flex: 0 0 auto;
+    width: auto;
+    min-height: 42px;
+    white-space: nowrap;
+}
+.preset-empty-state {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    margin: 0;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--secondary-text);
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    padding: 16px;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.68);
+    box-sizing: border-box;
+}
+.modal-content {
+    position: relative;
+    width: min(100%, 860px);
+    max-height: calc(100vh - 36px);
+    margin: 0 auto;
+    padding: 26px;
+    overflow: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+.farm-style-modal {
+    min-height: min(720px, calc(100vh - 36px));
+}
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    color: var(--secondary-text);
+    font-size: 30px;
+    cursor: pointer;
+}
+.modal-title,
+.modal-content h2 {
+    margin: 0 42px 20px 0;
+    color: var(--primary-color);
+}
+.compact-form > .form-group {
+    max-width: 620px;
+    margin: 0 auto 16px;
+}
+.preset-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+.preset-form-grid fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+.preset-form-grid legend {
+    padding: 0 6px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.preset-form-grid .input-row,
+.time-settings {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+.preset-form-grid .input-group {
+    display: grid;
+    gap: 6px;
+}
+.light-settings {
+    grid-column: 1 / -1;
+}
+.hours-display {
+    display: grid;
+    place-items: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+.hours-value-display {
+    min-width: 72px;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 800;
+}
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+.share-options {
+    flex-direction: column;
+}
+.share-result-section {
+    margin-top: 0;
+}
+.share-input {
+    flex: 1 1 260px;
+    font-family: Consolas, monospace;
+}
+.text-muted {
+    color: var(--secondary-text);
+}
+.d-none {
+    display: none !important;
+}
+.w-100 {
+    width: 100%;
+}
+.modal-footer {
+    margin-top: 0;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-color);
+    text-align: right;
+}
+@media (max-width: 680px) {
+    .preset-create-actions {
+        grid-template-columns: 1fr;
+    }
+    .preset-modes-container,
+    .preset-form-grid,
+    .preset-form-grid .input-row,
+    .time-settings {
+        grid-template-columns: 1fr;
+    }
+    .light-settings {
+        grid-column: auto;
+    }
+    .modal {
+        padding: 8px;
+    }
+    .modal-content {
+        max-height: calc(100vh - 16px);
+        padding: 20px 14px;
+    }
+    .import-code-container .input-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    .preset-actions > *,
+    .form-buttons-container > *,
+    .import-code-container button,
+    .copy-btn {
+        width: 100%;
+    }
+    .import-code-container input {
+        flex-basis: auto;
+    }
+}
+#presetModesContent {
+    margin-top: 12px;
+    padding: 14px;
+}
+#presetModesContent .preset-header {
+    margin: 0 0 12px;
+}
+#presetModesContent .preset-mode {
+    margin: 0;
+}
+#addPresetModal {
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#addPresetModal .farm-style-modal {
+    width: min(900px, calc(100vw - 24px));
+    max-width: min(900px, calc(100vw - 24px));
+    max-height: 90vh;
+    min-height: 0;
+    margin: 24px auto;
+    padding: 24px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#addPresetModal *,
+#addPresetModal *::before,
+#addPresetModal *::after {
+    box-sizing: border-box;
+}
+#addPresetModal .compact-form {
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+}
+#addPresetModal .compact-form > .form-group {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+#addPresetModal label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+#addPresetModal input,
+#addPresetModal select {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    font-size: 16px;
+}
+#addPresetModal .preset-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 14px;
+}
+#addPresetModal .preset-form-grid fieldset {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+    padding: 14px;
+    background: var(--input-bg);
+}
+#addPresetModal .preset-form-grid .light-settings,
+#addPresetModal .preset-form-grid .curtains-settings {
+    grid-column: 1 / -1;
+}
+#addPresetModal .input-row {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+}
+.preset-field-hint {
+    margin: 0;
+    color: var(--secondary-text);
+    line-height: 1.35;
+}
+.preset-hours-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+}
+.preset-hour-button {
+    min-width: 0;
+    min-height: 44px;
+    padding: 8px 4px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--button-bg);
+    color: var(--text-color);
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+}
+.preset-hour-button:hover {
+    transform: translateY(-1px);
+}
+.preset-hour-button.is-active,
+.preset-hour-button.is-up {
+    border-color: var(--accent-surface);
+    background: var(--accent-surface);
+    color: #fff;
+}
+.preset-hour-button.is-down {
+    border-color: #64748b;
+    background: #475569;
+    color: #fff;
+}
+.curtain-hour {
+    display: grid;
+    place-items: center;
+    gap: 2px;
+    line-height: 1.05;
+}
+.curtain-hour small {
+    font-size: 13px;
+    font-weight: 900;
+}
+#addPresetModal .hours-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2px;
+}
+#addPresetModal .hours-value-display {
+    min-width: 54px;
+    min-height: 38px;
+}
+#addPresetModal .form-actions {
+    position: sticky;
+    bottom: -24px;
+    z-index: 2;
+    margin: 2px -24px -24px;
+    padding: 14px 24px;
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+}
+#addPresetModal .form-buttons-container {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+#addPresetModal .btn-cancel,
+#addPresetModal .btn-save {
+    min-width: 160px;
+    min-height: 46px;
+}
+@media (max-width: 640px) {
+    #addPresetModal {
+        padding: 0;
+    }
+    #addPresetModal .farm-style-modal {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100dvh;
+        max-height: 100dvh;
+        margin: 0;
+        padding: 16px 12px;
+        border-radius: 0;
+    }
+    #addPresetModal .modal-title {
+        margin-right: 44px;
+        font-size: 22px;
+    }
+    #addPresetModal .preset-form-grid,
+    #addPresetModal .input-row {
+        grid-template-columns: 1fr;
+    }
+    .preset-hours-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 7px;
+    }
+    .preset-hour-button {
+        min-height: 44px;
+        padding: 8px 2px;
+    }
+    #addPresetModal .form-actions {
+        bottom: -16px;
+        margin: 0 -12px -16px;
+        padding: 12px;
+    }
+    #addPresetModal .form-buttons-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    #addPresetModal .btn-cancel,
+    #addPresetModal .btn-save {
+        width: 100%;
+        min-width: 0;
+    }
+}
+.preset-save-error {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: rgba(220, 53, 69, 0.15);
+    border: 1px solid rgba(220, 53, 69, 0.45);
+    color: #ffb4bc;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}

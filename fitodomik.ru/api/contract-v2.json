@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "request_header": {"X-Fitodomik-Contract": "2"},
+  "scope": ["/api/import-preset-mode.php", "/api/get-thresholds.php"],
+  "compatibility": "Without the header, historical JSON shapes and HTTP statuses are retained. Other endpoints retain their existing contracts.",
+  "success": {"success": true, "data": "object", "error": null},
+  "failure": {"success": false, "data": null, "error": {"code": "string", "message": "string"}},
+  "data": {
+    "/api/import-preset-mode.php": {"mode_id": "integer > 0"},
+    "/api/get-thresholds.php": {"device_id": "string", "thresholds": {"parameter_type": {"min_limit": "number", "max_limit": "number", "target_value": "number", "tolerance": "number"}}}
+  },
+  "http_statuses": [200, 401, 403, 404, 405, 422, 500, 503],
+  "inputs": "Existing methods, authentication, CSRF, parameters and device ownership checks apply. No additional device privileges are granted."
+}

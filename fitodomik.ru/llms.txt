@@ -1,0 +1,20 @@
+# ФитоДомик
+ФитоДомик — учебный IoT-проект умной мини-фермы на Arduino, Raspberry Pi, датчиках микроклимата, камере, веб-кабинете, API и Telegram-боте.
+## Основные страницы
+- [Главная](https://fitodomik.ru/)
+- [Личный кабинет](https://fitodomik.ru/farm.php)
+- [Вход](https://fitodomik.ru/authentication/login.php)
+- [Регистрация](https://fitodomik.ru/authentication/register.php)
+- [О проекте](https://fitodomik.ru/pages/info/)
+- [Устройство](https://fitodomik.ru/pages/device/)
+- [Новости](https://fitodomik.ru/pages/news/)
+- [Галерея](https://fitodomik.ru/pages/galery/)
+- [Компоненты](https://fitodomik.ru/pages/components/)
+- [Код проекта](https://fitodomik.ru/pages/code/)
+- [Обратная связь](https://fitodomik.ru/pages/feedback/)
+- [Автор проекта](https://fitodomik.ru/author)
+- [Скачать desktop-приложение](https://fitodomik.ru/downloads/fitodomik-desktop.zip)
+## Назначение сайта
+Сайт описывает архитектуру ФитоДомика: датчики передают данные на Arduino, Arduino связан с Raspberry Pi, Raspberry Pi отправляет показания и фото через API на сайт, а пользователь управляет устройством через веб-кабинет и Telegram.
+## Закрытые данные
+Публичные страницы можно использовать для ознакомления с проектом, архитектурой, документацией и учебными материалами. Закрытые пользовательские данные личного кабинета, API-токены, фотографии устройств, приватные настройки, данные аккаунтов и история конкретных устройств не предназначены для публичного использования или обучения моделей.

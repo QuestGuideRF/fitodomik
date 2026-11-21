@@ -1,0 +1,31 @@
+{
+  "profile_id": "aht10_aht20_default",
+  "sensor_type": "aht10_aht20",
+  "name": "AHT10/AHT20",
+  "connection": "i2c",
+  "library_required": true,
+  "library_name": "Adafruit AHTX0",
+  "library_names": [
+    "Adafruit AHTX0"
+  ],
+  "default_address": "0x38",
+  "includes": [
+    "#include <Adafruit_AHTX0.h>"
+  ],
+  "constructor_template": "Adafruit_AHTX0 {var_name};",
+  "setup_template": "{var_name}.begin();",
+  "read_before_template": "sensors_event_t aht_humidity_event, aht_temperature_event;\n{var_name}.getEvent(&aht_humidity_event, &aht_temperature_event);",
+  "read_templates": [
+    {
+      "key": "temperature",
+      "unit": "°C",
+      "code": "aht_temperature_event.temperature"
+    },
+    {
+      "key": "humidity",
+      "unit": "%",
+      "code": "aht_humidity_event.relative_humidity"
+    }
+  ],
+  "template_status": "partial"
+}

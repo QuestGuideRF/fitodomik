@@ -1,0 +1,117 @@
+{
+  "scene": 0,
+  "asset": {
+    "generator": "ImageToStl.com",
+    "version": "2.0"
+  },
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node0",
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Node1",
+      "mesh": 0,
+      "NodeMesh": {
+        "CalculatedWidth": 2.0027568340301514,
+        "CalculatedHeight": 6.522031307220459,
+        "CalculatedDepth": 0.6459903791546822,
+        "MaxDimension": 6.522031307220459
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "x1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.85,
+          0.85,
+          0.85,
+          1
+        ],
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.5
+      },
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh0",
+      "primitives": [
+        {
+          "indices": 2,
+          "material": 0,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          }
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8534,
+      "type": "VEC3",
+      "min": [
+        -1.0028571,
+        -3.9314418,
+        -0.100717194
+      ],
+      "max": [
+        0.99989974,
+        2.5905895,
+        0.5452732
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8534,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 27186,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 102408,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 102408,
+      "byteOffset": 102408
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54372,
+      "byteOffset": 204816
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 259188,
+      "uri": "resources/YL-69.web.v15.bin"
+    }
+  ]
+}

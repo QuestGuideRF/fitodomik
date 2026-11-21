@@ -1,0 +1,38 @@
+{
+  "include": [
+    "fitodomik",
+    "fitodomik.ru/bot"
+  ],
+  "exclude": [
+    ".venv",
+    "fitodomik/**/__pycache__",
+    "fitodomik.ru/bot/.python38",
+    "fitodomik.ru/bot/venv",
+    "fitodomik.ru/bot/logs",
+    "fitodomik.ru/bot/runtime",
+    "fitodomik.ru/bot/**/__pycache__"
+  ],
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.13",
+  "pythonPlatform": "Windows",
+  "typeCheckingMode": "standard",
+  "executionEnvironments": [
+    {
+      "root": "fitodomik",
+      "pythonVersion": "3.13",
+      "pythonPlatform": "Windows",
+      "extraPaths": [
+        "fitodomik"
+      ]
+    },
+    {
+      "root": "fitodomik.ru/bot",
+      "pythonVersion": "3.13",
+      "pythonPlatform": "Linux",
+      "extraPaths": [
+        "fitodomik.ru"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ФитоДомик — умная мини-ферма",
+  "short_name": "ФитоДомик",
+  "description": "Публичный сайт проекта автоматизированной мини-фермы ФитоДомик",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f8ef",
+  "theme_color": "#2f8f46",
+  "lang": "ru",
+  "icons": [
+    {"src": "/static/icon/android-chrome-192x192.v13.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/static/icon/android-chrome-512x512.v13.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "/static/icon/apple-touch-icon.v13.png", "sizes": "180x180", "type": "image/png"},
+    {"src": "/static/icon/favicon-32x32.v13.png", "sizes": "32x32", "type": "image/png"},
+    {"src": "/static/icon/favicon-16x16.v13.png", "sizes": "16x16", "type": "image/png"}
+  ]
+}

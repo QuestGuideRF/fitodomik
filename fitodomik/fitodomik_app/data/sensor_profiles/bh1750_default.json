@@ -1,0 +1,25 @@
+{
+  "profile_id": "bh1750_default",
+  "sensor_type": "bh1750",
+  "name": "BH1750",
+  "connection": "i2c",
+  "library_required": true,
+  "library_name": "BH1750",
+  "library_names": [
+    "BH1750"
+  ],
+  "default_address": "0x23",
+  "includes": [
+    "#include <BH1750.h>"
+  ],
+  "constructor_template": "BH1750 {var_name};",
+  "setup_template": "{var_name}.begin();",
+  "read_templates": [
+    {
+      "key": "light",
+      "unit": "lux",
+      "code": "{var_name}.readLightLevel()"
+    }
+  ],
+  "template_status": "library_required"
+}

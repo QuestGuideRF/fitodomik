@@ -1,0 +1,35 @@
+{
+  "profile_id": "bme280_i2c_default",
+  "sensor_type": "bme280",
+  "name": "BME280 I2C",
+  "connection": "i2c",
+  "library_required": true,
+  "library_name": "Adafruit BME280",
+  "library_names": [
+    "Adafruit BME280 Library"
+  ],
+  "default_address": "0x76",
+  "includes": [
+    "#include <Adafruit_BME280.h>"
+  ],
+  "constructor_template": "Adafruit_BME280 {var_name};",
+  "setup_template": "{var_name}.begin({address});",
+  "read_templates": [
+    {
+      "key": "temperature",
+      "unit": "°C",
+      "code": "{var_name}.readTemperature()"
+    },
+    {
+      "key": "humidity",
+      "unit": "%",
+      "code": "{var_name}.readHumidity()"
+    },
+    {
+      "key": "pressure",
+      "unit": "hPa",
+      "code": "{var_name}.readPressure() / 100.0F"
+    }
+  ],
+  "template_status": "library_required"
+}

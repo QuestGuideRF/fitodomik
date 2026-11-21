@@ -1,0 +1,105 @@
+{
+  "scene": 0,
+  "asset": {
+    "generator": "ImageToStl.com",
+    "version": "2.0"
+  },
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node0",
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Node1",
+      "mesh": 0,
+      "NodeMesh": {
+        "CalculatedWidth": 45.11449432373047,
+        "CalculatedHeight": 7.802529573440552,
+        "CalculatedDepth": 14.199999809265137,
+        "MaxDimension": 45.11449432373047
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "x1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.85,
+          0.85,
+          0.85,
+          1
+        ],
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.5
+      },
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh0",
+      "primitives": [
+        {
+          "indices": 1,
+          "material": 0,
+          "attributes": {
+            "POSITION": 0
+          }
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 19955,
+      "type": "VEC3",
+      "min": [
+        -23.173147,
+        -5.3106513,
+        -7.1
+      ],
+      "max": [
+        21.941347,
+        2.4918783,
+        7.1
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 120486,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 239460,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 240972,
+      "byteOffset": 239460
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 480432,
+      "uri": "resources/Soil%20Moisture%20Sensor%20Board.web.v15.bin"
+    }
+  ]
+}

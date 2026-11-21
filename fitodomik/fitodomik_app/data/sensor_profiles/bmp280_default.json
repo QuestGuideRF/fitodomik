@@ -1,0 +1,30 @@
+{
+  "profile_id": "bmp280_default",
+  "sensor_type": "bmp280",
+  "name": "BMP280",
+  "connection": "i2c",
+  "library_required": true,
+  "library_name": "Adafruit BMP280",
+  "library_names": [
+    "Adafruit BMP280 Library"
+  ],
+  "default_address": "0x76",
+  "includes": [
+    "#include <Adafruit_BMP280.h>"
+  ],
+  "constructor_template": "Adafruit_BMP280 {var_name};",
+  "setup_template": "{var_name}.begin({address});",
+  "read_templates": [
+    {
+      "key": "temperature",
+      "unit": "°C",
+      "code": "{var_name}.readTemperature()"
+    },
+    {
+      "key": "pressure",
+      "unit": "hPa",
+      "code": "{var_name}.readPressure() / 100.0F"
+    }
+  ],
+  "template_status": "library_required"
+}

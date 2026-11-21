@@ -1,0 +1,21 @@
+{
+  "profile_id": "hc_sr04_default",
+  "sensor_type": "hc_sr04",
+  "name": "HC-SR04",
+  "connection": "digital",
+  "required_pins": 2,
+  "library_required": false,
+  "library_name": "",
+  "includes": [],
+  "constructor_template": "",
+  "setup_template": "pinMode({trig_pin}, OUTPUT);\npinMode({echo_pin}, INPUT);",
+  "read_templates": [
+    {
+      "key": "distance",
+      "unit": "cm",
+      "code": "readHcSr04Cm({trig_pin}, {echo_pin})",
+      "invalid_condition": "{value_var} < 0"
+    }
+  ],
+  "template_status": "partial"
+}

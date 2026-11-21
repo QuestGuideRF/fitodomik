@@ -1,0 +1,28 @@
+{
+  "profile_id": "ds18b20_default",
+  "sensor_type": "ds18b20",
+  "name": "DS18B20",
+  "connection": "digital",
+  "library_required": true,
+  "library_name": "OneWire + DallasTemperature",
+  "library_names": [
+    "OneWire",
+    "DallasTemperature"
+  ],
+  "includes": [
+    "#include <OneWire.h>",
+    "#include <DallasTemperature.h>"
+  ],
+  "constructor_template": "OneWire oneWire_{var_name}({pin});\nDallasTemperature {var_name}(&oneWire_{var_name});",
+  "setup_template": "{var_name}.begin();",
+  "read_before_template": "{var_name}.requestTemperatures();",
+  "read_templates": [
+    {
+      "key": "temperature",
+      "unit": "°C",
+      "code": "{var_name}.getTempCByIndex(0)",
+      "invalid_condition": "{value_var} <= -126.0"
+    }
+  ],
+  "template_status": "library_required"
+}

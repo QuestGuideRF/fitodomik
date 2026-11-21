@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /uploads/
+Allow: /assets/
+Allow: /pages/galery/
+Allow: /author
+Sitemap: https://fitodomik.ru/sitemap.xml
+Sitemap: https://fitodomik.ru/sitemap-images.xml

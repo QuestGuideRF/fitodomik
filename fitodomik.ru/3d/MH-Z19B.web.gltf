@@ -1,0 +1,245 @@
+{
+  "scene": 0,
+  "asset": {
+    "generator": "ImageToStl.com",
+    "version": "2.0"
+  },
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Node0",
+      "children": [
+        1
+      ]
+    },
+    {
+      "name": "Node1",
+      "mesh": 0,
+      "children": [
+        2,
+        3
+      ],
+      "NodeMesh": {
+        "CalculatedWidth": 89.35310173034668,
+        "CalculatedHeight": 9.25,
+        "CalculatedDepth": 19.80016267299652,
+        "MaxDimension": 89.35310173034668
+      }
+    },
+    {
+      "name": "Node2",
+      "mesh": 1,
+      "NodeMesh": {
+        "CalculatedWidth": 84.05396842956543,
+        "CalculatedHeight": 10.200000166893005,
+        "CalculatedDepth": 18.90000057220459,
+        "MaxDimension": 84.05396842956543
+      }
+    },
+    {
+      "name": "Node3",
+      "mesh": 2,
+      "NodeMesh": {
+        "CalculatedWidth": 88.9539680480957,
+        "CalculatedHeight": 1.4500000476837158,
+        "CalculatedDepth": 17.299999058246613,
+        "MaxDimension": 88.9539680480957
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "FFA7E5F3",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9529412,
+          0.8980392,
+          0.654902,
+          1
+        ],
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.5
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "FFF2F5F5",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9607843,
+          0.9607843,
+          0.9490196,
+          1
+        ],
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.5
+      },
+      "doubleSided": true
+    },
+    {
+      "name": "FF489544",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.26666668,
+          0.58431375,
+          0.28235295,
+          1
+        ],
+        "metallicFactor": 0.05,
+        "roughnessFactor": 0.5
+      },
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh0",
+      "primitives": [
+        {
+          "indices": 1,
+          "material": 0,
+          "attributes": {
+            "POSITION": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mesh0",
+      "primitives": [
+        {
+          "indices": 3,
+          "material": 1,
+          "attributes": {
+            "POSITION": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mesh0",
+      "primitives": [
+        {
+          "indices": 5,
+          "material": 2,
+          "attributes": {
+            "POSITION": 4
+          }
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 16226,
+      "type": "VEC3",
+      "min": [
+        -57.876984,
+        -9.25,
+        -1.8408293
+      ],
+      "max": [
+        -31.476118,
+        0,
+        17.959333
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 97308,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3",
+      "min": [
+        -52.076984,
+        -8.55,
+        -1.4408293
+      ],
+      "max": [
+        -31.976984,
+        -1.65,
+        17.459171
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 2548,
+      "type": "VEC3",
+      "min": [
+        -60.876984,
+        -1.2,
+        -0.4908293
+      ],
+      "max": [
+        -28.076984,
+        -0.25,
+        16.80917
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 15384,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 194712,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 194616,
+      "byteOffset": 194712
+    },
+    {
+      "buffer": 0,
+      "byteLength": 192,
+      "byteOffset": 389328
+    },
+    {
+      "buffer": 0,
+      "byteLength": 72,
+      "byteOffset": 389520
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30576,
+      "byteOffset": 389592
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30768,
+      "byteOffset": 420168
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 450936,
+      "uri": "resources/MH-Z19B.web.v15.bin"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.1",
+  "date": "2026-09-30",
+  "package_url": "https://fitodomik.ru/downloads/fitodomik-desktop.zip",
+  "sha256_url": "https://fitodomik.ru/downloads/fitodomik-desktop.zip.sha256",
+  "changelog": [
+    "Explicit relay SET/ACK and pump fault handling",
+    "Durable device-scoped queues and command delivery journal"
+  ],
+  "min_supported_version": "1.0.1"
+}

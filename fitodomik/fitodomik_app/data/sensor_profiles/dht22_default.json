@@ -1,0 +1,29 @@
+{
+  "profile_id": "dht22_default",
+  "sensor_type": "dht22",
+  "name": "DHT22",
+  "connection": "digital",
+  "library_required": true,
+  "library_name": "DHT sensor library",
+  "library_names": [
+    "DHT sensor library"
+  ],
+  "includes": [
+    "#include <DHT.h>"
+  ],
+  "constructor_template": "DHT {var_name}({pin}, DHT22);",
+  "setup_template": "{var_name}.begin();",
+  "read_templates": [
+    {
+      "key": "temperature",
+      "unit": "°C",
+      "code": "{var_name}.readTemperature()"
+    },
+    {
+      "key": "humidity",
+      "unit": "%",
+      "code": "{var_name}.readHumidity()"
+    }
+  ],
+  "template_status": "library_required"
+}
